@@ -1,14 +1,18 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     font-family: 'Sulphur Point';
+    background-color:#8E2DE2;
+    min-height: 100vh;
 `;
 
 export const Row = styled.div`
+    background-color: #fff;
+    min-height: calc(100vh - 30px);
+    margin: 15px 0;
     width: 75%;
     max-width: 1140px;
     text-align: center;
@@ -40,7 +44,16 @@ export const Row = styled.div`
                     outline: none;
                 }
             }
-        } 
+        }
+        
+        button {
+            display: none;
+        }
+    }
+
+    pre {
+        margin: 35px; 
+        font-size: 13px;
     }
 
 `;
