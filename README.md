@@ -1,68 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# find lyrics
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This is example of use api lyrics
 
-### `npm start`
+## Hierarchy
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **/public** directory where the react injects javascript in develop;
+- **/build** directory created after execute command *build*, where is located files for production;
+- **/src** directory where the develop files is located;
+  - **/assets** directory where static files like fonts and images is located;
+  - **/services** directory where the files related to services used in the application will be created, for example HTTP requests;
+  - **/views** directory where de pages is located.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+- [NodeJS](https://nodejs.org)
+- [npm](https://www.npmjs.com)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+In the frontend directory, install the dependencies
+```bash
+npm install
+```
+Start React development  server
+```bash
+npm start
+```
+Await for browser window open in http://localhost:3000 .
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+In the frontend directory, install the dependencies
+```bash
+npm install
+```
+Execute build command to create minify version to production
+```bash
+npm run build
+```
+Will be create folder **/build** with the files. Inserts into HTTP server.
+[More information](https://create-react-app.dev/docs/deployment/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Built With
 
-### `npm run eject`
+- [ReactJS](https://reactjs.org)
+- [Axios](https://github.com/axios/axios)
+- [Styled Components](https://www.styled-components.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Environment variables
+Environment variables is located in */src/config/config.js*
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**SEARCH LYRICS** - Endpoint to search lyrics
+```json
+ENDPOINT_LYRICS: "https://api.lyrics.ovh/v1"
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Observation
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### ReactJS Script's
+Start development server
+```bash
+start
+```
+Creates production version
+```bash
+build
+```
+Execute tests
+```bash
+test
+```
+Ejects project from create-react-app ([more infomation](https://github.com/facebook/create-react-app/blob/master/packages/cra-template/template/README.md#npm-run-eject))
+```bash
+eject
+```
+Analyzes code to find problems
+```
+lint
+```
