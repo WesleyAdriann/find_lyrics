@@ -57,7 +57,6 @@ Environment variables is located in */src/config/config.js*
 ENDPOINT_LYRICS: "https://api.lyrics.ovh/v1"
 ```
 
-
 ## Observation
 
 ### ReactJS Script's
@@ -76,8 +75,4 @@ test
 Ejects project from create-react-app ([more infomation](https://github.com/facebook/create-react-app/blob/master/packages/cra-template/template/README.md#npm-run-eject))
 ```bash
 eject
-```
-Analyzes code to find problems
-```
-lint
 ```
