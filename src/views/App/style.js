@@ -5,7 +5,11 @@ export const Container = styled.div`
     align-items: center;
     flex-direction: column;
     font-family: 'Sulphur Point';
-    background-color: #8E2DE2;
+
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to bottom, #6a22a8, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6a22a8, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     min-height: 100vh;
 `;
 
