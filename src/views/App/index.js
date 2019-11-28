@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Container, Row } from './style';
+import { Container, Row, Spinner } from './style';
 
 import { requesSongtLyric } from '../../services/lyrics';
 
@@ -18,15 +18,20 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true)
     requesSongtLyric(song)
       .then((res) => {
+        setLoading(false)
         setLyric(res.lyrics);
       })
       .catch((err) => {
         console.log(err);
         console.log(err.response);
+        setLoading(false)
         if ("response" in err) {
           setLyric(err.response.data.error);
+        } else {
+          setLyric("An error has occurred please try again.")
         }
       })
   }
@@ -57,9 +62,16 @@ function App() {
           </label>
           <button />
         </form>
-        <pre>
-          {lyric}
-        </pre>
+        {
+          loading
+          ? (
+            <Spinner />
+          ) : (
+            <pre>
+              {lyric}
+            </pre>
+          )
+        }
       </Row>
     </Container>
   );

@@ -5,7 +5,7 @@ export const Container = styled.div`
     align-items: center;
     flex-direction: column;
     font-family: 'Sulphur Point';
-    background-color:#8E2DE2;
+    background-color: #8E2DE2;
     min-height: 100vh;
 `;
 
@@ -54,6 +54,23 @@ export const Row = styled.div`
     pre {
         margin: 35px; 
         font-size: 13px;
+    }
+
+`;
+
+export const Spinner = styled.div`
+    margin-top: 35px;
+    border: 4px solid transparent;
+    border-top: 4px solid #8E2DE2;
+    border-right: 4px solid #8E2DE2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
     }
 
 `;
