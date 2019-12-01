@@ -57,6 +57,10 @@ Environment variables is located in */src/config/config.js*
 ENDPOINT_LYRICS: "https://api.lyrics.ovh/v1"
 ```
 
+## Authors
+
+- [Wesley Adriann](https://github.com/WesleyAdriann/)
+
 ## Observation
 
 ### ReactJS Script's
