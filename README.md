@@ -1,4 +1,4 @@
-# Find Lyrics
+Find Lyrics
 ============
 
 ## Description
