@@ -1,4 +1,5 @@
-# find lyrics
+# Find Lyrics
+============
 
 ## Description
 
@@ -60,6 +61,14 @@ ENDPOINT_LYRICS: "https://api.lyrics.ovh/v1"
 ## Authors
 
 - [Wesley Adriann](https://github.com/WesleyAdriann/)
+
+## Project Status
+
+- **Concluded**
+
+## URL Project Reference
+
+- [https://github.com/WesleyAdriann/find_lyrics](https://github.com/WesleyAdriann/find_lyrics)
 
 ## Observation
 
